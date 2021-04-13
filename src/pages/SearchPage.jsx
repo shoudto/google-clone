@@ -5,6 +5,8 @@ import useGoogleSearch from '../hooks/useGoogleSearch'
 import Response from '../Response'
 import { Link } from 'react-router-dom'
 import SearchBar from '../components/SearchBar'
+import SearchIcon from '@material-ui/icons/Search'
+
 
 function SearchPage() {
 
@@ -29,6 +31,42 @@ function SearchPage() {
 
                     <div className="searchPage__headerBody">
                         <SearchBar hideButtons />
+                        <div className="searchPage__options">
+                            <div className="optionsLeft">
+                                <div className="searchPage__options">
+                                    <SearchIcon />
+                                    <Link to="/all">All</Link>
+                                </div>
+                                <div className="searchPage__options">
+                                    <DescriptionIcon />
+                                    <Link to="/news">News</Link>
+                                </div>
+                                <div className="searchPage__options">
+                                    <ImageIcon />
+                                    <Link to="/images">Images</Link>
+                                </div>
+                                <div className="searchPage__options">
+                                    <LocalOfferIcon />
+                                    <Link to="/shopping">shopping</Link>
+                                </div>
+                                <div className="searchPage__options">
+                                    <RoomIcon />
+                                    <Link to="/maps">maps</Link>
+                                </div>
+                                <div className="searchPage__options">
+                                    <MoreVertIcon />
+                                    <Link to="/more">more</Link>
+                                </div>
+                            </div>
+
+                            <div className="optionsRight">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="searchPage__results">
+
                     </div>
                 </div>
 
