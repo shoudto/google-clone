@@ -1,15 +1,27 @@
 import './App.css';
 import Home from './pages/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
     // BEM
     <div className="app">
-      <h1>This is working</h1>
+      <Router>
+        <Switch>
+          <Route path="/search">
+            <h1>This is the search page</h1>
+          </Route>
 
-      {/* Home (the one with the search on) */}
-      <Home />
-      {/* Search page (The results page) */}
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
