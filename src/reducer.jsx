@@ -1,4 +1,4 @@
-export const intialState = {
+export const initialState = {
     term: null,
 };
 
@@ -19,3 +19,5 @@ const reducer = (state, action) => {
             return state;
     }
 }
+
+export default reducer;
