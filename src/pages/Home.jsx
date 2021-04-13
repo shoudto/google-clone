@@ -29,7 +29,7 @@ function Home() {
 
                 <div className="searchInput">
                     {/* Adding a search bar */}
-                    <SearchBar />
+                    <SearchBar hideButtons/>
                 </div>
             </div>
         </div>

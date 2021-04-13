@@ -3,14 +3,18 @@ import './Search.css';
 import SearchIcon from '@material-ui/icons/Search'
 import MicIcon from '@material-ui/icons/Mic'
 import { Button } from '@material-ui/core'
+import { useHistory } from 'react-router-dom'
 
-function SearchBar() {
+function SearchBar({ hideButtons = false }) {
 
     // How to set a variable in in react
     const [input, setInput] = useState('');
+    const history = useHistory();
 
-    const search = e => {
+    const search = (e) => {
         e.preventDefault();
+
+        history.push('/search')
     }
 
     return (
@@ -21,10 +25,17 @@ function SearchBar() {
                 <MicIcon />
             </div>
 
+            {!hideButtons ? (
             <div className="search__buttons">
                 <Button type="submit" onClick={search} variant="outlined">Google Search</Button>
                 <Button variant="outlined">I'm Feeling Lucky</Button>
             </div>
+            ) : (
+            <div className="search__buttons">
+                <Button className="search_buttonsHidden" type="submit" onClick={search} variant="outlined">Google Search</Button>
+                <Button className="search_buttonsHidden" variant="outlined">I'm Feeling Lucky</Button>
+            </div>
+            )}
         </form>
     )
 }
