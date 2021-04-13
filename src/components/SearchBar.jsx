@@ -50,3 +50,4 @@ function SearchBar({ hideButtons = false }) {
 
 export default SearchBar
 
+
