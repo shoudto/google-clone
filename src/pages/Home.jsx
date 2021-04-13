@@ -5,7 +5,20 @@ function Home() {
     return (
         <div>
             <h1>Home Page!</h1>
-            <h2>Setting up</h2>
+
+            <div className="home__header">
+                <div className="home__headerLeft">
+                    {/* Setting up two links here */}
+                </div>
+
+                <div className="home__headerRight">
+                    {/* Setting up two links here, icon, and avatar */}
+                </div>
+            </div>
+
+            <div className="home__body">
+
+            </div>
         </div>
     )
 }
