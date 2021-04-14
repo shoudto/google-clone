@@ -57,6 +57,11 @@
   margin: 40px 0;
 }
 
+.Link {
+  text-decoration: none;
+  color: black;
+}
+
 .resultCount {
   color: #70757a;
   font-size: 14px;
@@ -67,6 +72,13 @@
   margin-top: 20px;
   margin-left: 240px;
   margin-bottom: 100px;
+}
+
+.resultImage {
+  object-fit: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
 }
 
 .Title {
