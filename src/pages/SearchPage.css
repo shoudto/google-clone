@@ -21,3 +21,66 @@
   margin: unset;
   max-width: unset;
 }
+
+.searchPage__options {
+  display: flex;
+  align-items: center;
+  color: grey;
+}
+
+.optionsLeft a,
+.optionsRight a {
+  text-decoration: none;
+  color: grey;
+}
+
+.optionsLeft,
+.optionsRight {
+  display: flex;
+}
+
+.optionsRight {
+  margin-left: 80px;
+}
+
+.searchPage__option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.searchPage_option a {
+  margin-left: 5px;
+}
+
+.searchPage__result {
+  margin: 40px 0;
+}
+
+.resultCount {
+  color: #70757a;
+  font-size: 14px;
+}
+
+.searchPage__results {
+  max-width: 650px;
+  margin-top: 20px;
+  margin-left: 240px;
+  margin-bottom: 100px;
+}
+
+.Title {
+  text-decoration: none;
+}
+
+.Title:hover {
+  text-decoration: underline;
+}
+
+.Title > h2 {
+  font-weight: 500;
+}
+
+.Snippet {
+  margin-top: 10px;
+}
